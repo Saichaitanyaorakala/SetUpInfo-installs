@@ -1,0 +1,21 @@
+TO DEPLOY Existing app to heroku
+$heroku login
+heroku git:remote -a pacific-ridge-15607.git
+git init
+git add .
+git commit -am "changed"
+git push heroku master
+
+
+#ssh keys and adding to heroku
+heroku login
+heroku keys:add
+
+Pip install django_heroku
+pip install python-decouple
+pip install gunicorn
+
+#settings
+settings file :middleware[ 'django.contrib.sessions.middleware.SessionMiddleware', ]
+django_heroku.settings(locals)
+    

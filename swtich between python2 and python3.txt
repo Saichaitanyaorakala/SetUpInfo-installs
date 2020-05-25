@@ -1,0 +1,3 @@
+Gitbash or cmd
+$virtualenv envName -p C:/Python27/python.exe #copy paste,filepath of python.exe
+$virtualenv envName -p C:/Python38/python.exe #copy paste,filepath of python.exe

@@ -1,0 +1,12 @@
+open cmd
+>>python 
+
+set environment variable in system settings 
+
+Environment variables >> path  >> edit >> new >> add path >> click ok >> click ok
+
+>>echo %path%
+
+python 
+>>import sys
+>>print sys.executable
