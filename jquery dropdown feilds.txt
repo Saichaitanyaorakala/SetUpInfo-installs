@@ -1,0 +1,25 @@
+1- you inspect the page and copy the id of the element you want to hide
+
+2- you make a style tag <style></style> 
+and you add : 
+#id_exec_first_name, label[for="id_exec_first_name"] {
+  display: none
+}
+
+3-you add the script tag <script></script>
+and you write the function to display the element that you already hided using css
+
+
+
+$(function () { 
+
+ $('#id_executive_authority_1').on('click', function () {
+ $('#id_exec_first_name, label[for="id_exec_first_name"]').show();
+ $('#id_exec_last_name, label[for="id_exec_last_name"]').show();
+ $('#id_exec_title, label[for="id_exec_title"]').show();
+ $('#id_exec_email, label[for="id_exec_email"]').show();
+$('#id_exec_phone_number, label[for="id_exec_phone_number"]').show();
+ $('#id_exec_fax, label[for="id_exec_fax"]').show();
+
+});
+});
